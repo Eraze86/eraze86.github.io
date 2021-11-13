@@ -1,0 +1,62 @@
+@media screen and(min-width: 1300px){
+    @mixin grid7{
+        grid-column: 5/ span 7;
+    }
+    body{
+        font-size: 1rem;
+        max-height: 70vh;
+    }
+    .wrapper img{
+        top: 2rem;
+        left: 11rem;
+        max-height: initial;
+    }
+    header{
+        height: 55vh;
+        margin-bottom: 2rem;
+    }
+
+    header nav{
+        flex-direction: row;
+    }
+    button{
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    .border{
+        width: 20vw;
+        left: 4rem;
+    }
+    .name{
+        display: block;
+        top: 5rem;
+        right: 20rem;
+        font-size: 2rem;
+    }
+    .background{
+        display: block;
+        top: 105vh;
+            }
+    section article{
+        margin-top: 2rem;
+    }
+    section .skills, section .strength{
+        grid-column: 2/ span 3;
+        max-width: 16vw;
+        max-height: 15rem;
+   
+    }
+    section .about{
+        @include grid7;
+    }
+    section .work{
+        @include grid7;
+        padding-top: 4rem;
+    }
+    section .education{
+        @include grid7;
+    }
+    th{
+        width: 20%;
+    }
+}

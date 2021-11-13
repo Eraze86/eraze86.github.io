@@ -1,0 +1,31 @@
+@media screen and(min-width: 480px) and(max-width: 768px){
+
+    body{
+        max-height: 66vh;
+        background-repeat: no-repeat;
+        font-size: 0.8rem;
+    }
+    .wrapper img{
+        max-height: 11rem;
+    }
+    header{
+        height: 30vh;
+    }
+    .border{
+        width: 30vw;
+    }
+
+    .background{
+        display: block;
+    }
+    section .strength{
+        min-height: 12rem;
+    } 
+    .about{
+        max-height: 10rem;
+    }
+    section .work{
+        padding-top: 1rem;
+    }
+
+}

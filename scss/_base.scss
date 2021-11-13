@@ -1,0 +1,127 @@
+$margin-primary: 0;
+$list-style: none;
+@mixin grid6{
+    grid-column: 6/ span 6;
+}
+body{
+    background-image: url(../pictures/leaf.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: black;
+    margin: $margin-primary;
+    padding: 0;
+    color: rgb(237, 241, 238);
+    font-size: 0.6rem;
+    z-index: -2;
+}
+.wrapper{  
+    position: relative;
+    img{
+    margin: 1rem;
+    border: 0.5rem solid #0A1416;
+    max-width: 30vw;
+    max-height: 9rem;
+    position: absolute;
+    top: 0.5rem;
+    left: 15%;
+    z-index: 1;
+    }
+}
+// Allt som finns i headern
+header{
+    height: 30vh;
+    display: block;
+    margin-bottom: 1rem;
+    nav{
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+} 
+button{
+    border-radius: 4rem;
+    width: 2rem;
+    height:2rem;
+    margin: 0.5rem 0.5rem;
+    background-color: rgb(185, 189, 132);
+}
+.border{
+    width: 30vw;
+    height: 100vh;
+    background-color: #0A1416;
+    position: fixed;
+    left: 5%;
+    top: 0;
+}
+.name{
+    display: none;
+    position: absolute;
+}
+a{
+    padding-top: 1rem;
+}
+
+.background{
+    display: none;
+    background-color: rgb(0, 0, 0);
+    height: 10rem; 
+    width: 100%;
+    position:absolute; 
+    top: 26.5rem;
+    z-index: -1;
+}
+// en grid för att dela upp innehållet i rader
+main{
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    column-gap: 0.3rem;
+
+// i section har jag delat upp det i kolumer
+    section{
+        display: block;
+        z-index: 1;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        article{
+            display: block;
+            border-radius: 1rem;
+        }
+    }
+}
+// de små rutorna i bordern
+section .strength, section .skills{
+    grid-column: 2/ span 3;
+    max-height: 9rem;
+    margin-top: 0rem;
+    ul{
+        list-style: $list-style;
+        padding-left: .4rem;
+        li{
+            padding: 0.1rem;
+        } 
+    }
+}
+.about{
+    padding: 0rem 1rem 1rem 1rem;
+    @include grid6;
+    background-color: black;
+}
+section .work{
+    @include grid6;
+}
+section .education{
+    @include grid6;
+    ul{
+        list-style: square;
+    }
+}
+th{
+    vertical-align: text-top;
+    width: 35%;
+}
+
+
+
