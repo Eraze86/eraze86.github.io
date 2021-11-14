@@ -19,14 +19,14 @@ body{
 .wrapper{  
     position: relative;
     img{
-    margin: 1rem;
-    border: 0.5rem solid #0A1416;
-    max-width: 30vw;
-    max-height: 9rem;
-    position: absolute;
-    top: 0.5rem;
-    left: 15%;
-    z-index: 1;
+        margin: 1rem;
+        border: 0.5rem solid #0A1416;
+        width: 9rem;
+        height: 9rem;
+        position: absolute;
+        top: 0.5rem;
+        left: 15%;
+        z-index: 1;
     }
 }
 // Allt som finns i headern
@@ -42,12 +42,17 @@ header{
         flex-direction: column;
     }
 } 
-button{
+a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 4rem;
     width: 2rem;
     height:2rem;
     margin: 0.5rem 0.5rem;
     background-color: rgb(185, 189, 132);
+    margin-top: 1rem;
+
 }
 .border{
     width: 30vw;
@@ -61,10 +66,8 @@ button{
     display: none;
     position: absolute;
 }
-a{
-    padding-top: 1rem;
-}
 
+// hindra bild i body från att täcka områden som ska vara svarta
 .background{
     display: none;
     background-color: rgb(0, 0, 0);
@@ -74,13 +77,13 @@ a{
     top: 26.5rem;
     z-index: -1;
 }
+
 // en grid för att dela upp innehållet i rader
 main{
     display: grid;
     grid-template-rows: repeat(3, auto);
     column-gap: 0.3rem;
-
-// i section har jag delat upp det i kolumer
+    // i section har jag delat upp det i kolumer
     section{
         display: block;
         z-index: 1;
@@ -122,6 +125,11 @@ section .education{
 th{
     vertical-align: text-top;
     width: 35%;
+}
+footer{
+    text-align: center;
+    font-size: 1rem;
+    padding: 4rem;
 }
 
 

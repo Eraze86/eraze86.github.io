@@ -9,7 +9,8 @@
     .wrapper img{
         top: 2rem;
         left: 7rem;
-        max-height: 15rem;
+        height: 15rem;
+        width: 15rem;
     }
     header{
         height: 50vh;
@@ -18,7 +19,7 @@
     header nav{
         flex-direction: row;
         }
-    button{
+    a{
         width: 2.5rem;
         height: 2.5rem;
     }
@@ -35,7 +36,6 @@
     .background{
         display: block;
         top: 95vh;
-
     }
     section article{
         margin-top: 2rem;
