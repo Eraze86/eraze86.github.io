@@ -1,0 +1,51 @@
+@media screen and (min-width: 768px){
+
+    header{
+        height: 20rem;      
+    }
+    nav{
+        width: 18rem;
+        height: 10rem;
+    }
+    a{
+        font-size: 1.5rem,;
+    }
+
+    #border1{
+    left: 2rem;
+    }
+
+    img{
+        width: 15rem;
+        height: 15rem; 
+    }
+    
+    #thisisme{
+     left: 26rem;
+     width: 20rem;
+ 
+    }
+    #whathaveidone{
+        width: 30rem;
+        position: absolute;
+        left: 23rem;
+    
+    }
+    #shortinfo{
+        left: 3rem;
+    }
+    main{
+        height: 60vh;
+    }
+    footer{
+    
+    padding: 2rem 0rem;
+    text-align: center;
+    width: 100%;
+    
+    }
+    th{
+        padding-right: 1rem;
+        width: 6rem;
+    }
+}

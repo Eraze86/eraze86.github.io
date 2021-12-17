@@ -5,9 +5,8 @@ background-color:whitesmoke;
 }
 header{
     position: relative;
-    height: 20rem;
+    height: 13rem;
     width: 100vw;
-    
 }
 nav{
     position: absolute;
@@ -18,7 +17,7 @@ nav{
 }
 a{
     color: #265a64;
-    font-size: 1.5rem,;
+    font-size: .5rem,;
     padding: 0rem .5rem;
 }
 #border1{
@@ -26,43 +25,41 @@ background-color: #265a64;
 width: 13rem;
 height: 100%;
 position: fixed;
-left: 2rem;
 z-index: -1;
 }
 img{
     position: absolute;
     left: 1rem;
     top: 2rem;
-    width: 15rem;
-    height: 15rem;
+    width: 10rem;
+    height: 10rem;
     border-radius: 50%;
 }
 
 section{
     display: flex;
     flex-direction: row;
-    column-gap: 10rem;
 }
 
 #thisisme{
  position: absolute;
  top: 3rem;
- left: 26rem;
+ left: 15rem;
  width: 20rem;
  flex-direction: column;
 }
 #whathaveidone{
-    width: 30rem;
+    width: 20rem;
     position: absolute;
-    left: 23rem;
+    left: 14rem;
 
 }
 #shortinfo{
     position: absolute;
-    left: 3rem;
+    left: 1rem;
 }
 main{
-    height: 60vh;
+    height: 80vh;
 }
 footer{
 
@@ -74,4 +71,5 @@ width: 100%;
 th{
     padding-right: 1rem;
     width: 6rem;
+    vertical-align: text-top;
 }
